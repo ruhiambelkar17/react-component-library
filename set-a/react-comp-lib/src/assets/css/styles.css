@@ -1,5 +1,2 @@
-@import '../assets/scss/mixins/_inline';
 
-.inline-input {
-    @include flexInline();
-}
+

@@ -1,0 +1,56 @@
+@mixin flexInline(){
+    display: inline-flex;
+}
+
+@mixin flexColumn(){
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+@mixin formInput(){
+   width: 100%;
+    margin: 8px 0px;
+    padding: 10px 10px;
+    border: 0.5px solid #D9E1E7 ;
+    border-radius: 5px;
+    box-sizing: border-box;
+   
+}
+
+@mixin formLabel(){
+    font-size: 14px;
+}
+
+.inline-input {
+    @include flexInline();
+}
+
+.column-input {
+    @include flexColumn();
+}
+
+input{
+    @include formInput();
+}
+
+.form-container {
+    width: 750px;
+    
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form-button {
+    width: 100%;
+    background-color: #217EFD;
+    border: 2px solid #217EFD;
+    padding: 8px 0px;
+    border-radius: 5px;
+    margin: 8px 0px;
+}
+
+.form-label {
+    @include formLabel();
+}
