@@ -18,8 +18,8 @@
    
 }
 
-@mixin formLabel(){
-    font-size: 14px;
+@mixin formLabel($fs:"14px"){
+    font-size: #{$fs};
 }
 
 .inline-input {
@@ -35,7 +35,7 @@ input{
 }
 
 .form-container {
-    width: 750px;
+    //width: 750px;
     
     padding: 20px;
     border: 1px solid black;

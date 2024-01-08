@@ -45,13 +45,14 @@ function FormComp() {
                 />
               </div>
             </div>
-            <div className="column-input">
+            <div className="column-input" style={{display:"flex",justifyContent:"end"}}>
               <label for="cvv" className="form-label">Cvv</label>
               <input
                 type="password"
                 id="cvv"
                 name="cvv"
                 placeholder="cvv"
+
               />
             </div>
           </div>
