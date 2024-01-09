@@ -1,4 +1,5 @@
 import "../assets/scss/mixins/_form.scss";
+import ButtonComp from "./buttonComp";
 
 function FormComp() {
   return (
@@ -90,9 +91,7 @@ function FormComp() {
             
            
           </div>
-          <div >
-            <button className="form-button">Continue to Confirmation</button>
-            </div>
+          <ButtonComp></ButtonComp>
         </form>
       </div>
     </div>
