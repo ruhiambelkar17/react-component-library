@@ -8,10 +8,10 @@
     margin-right: 15px;
 }
 
-@mixin formInput(){
+@mixin formInput($inputPadding:"10px 10px"){
    width: 100%;
     margin: 8px 0px;
-    padding: 10px 10px;
+    padding: #{$inputPadding};
     border: 0.5px solid #D9E1E7 ;
     border-radius: 5px;
     box-sizing: border-box;
@@ -32,6 +32,10 @@
 
 input{
     @include formInput();
+}
+
+.input1{
+    @include formInput($inputPadding:"4px 4px");
 }
 
 .form-container {

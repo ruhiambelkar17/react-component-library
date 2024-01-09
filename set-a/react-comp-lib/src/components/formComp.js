@@ -10,12 +10,21 @@ function FormComp() {
         <form action="">
           <div>
             <label for="paymethod" className="form-label">Select Payment Method</label>
-            <input
-              type="text"
-              id="paymethod"
-              name="firstname"
-              placeholder="Select Payment Method"
-            />
+            
+            <div style={{display:"inline-flex",width:"100%"}} >
+                <div style={{marginRight:"25px"}} className="input1">
+                <label for="country"className="form-label">Country</label>
+                <input type="radio" />
+                </div>
+                <div style={{marginRight:"25px"}} className="input1">
+                <label for="country"className="form-label">Country</label>
+                <input type="radio" />
+                </div>
+                <div  className="input1">
+                <label for="country"className="form-label">Country</label>
+                <input type="radio" />
+                </div>
+                </div>
           </div>
 
           <div>
