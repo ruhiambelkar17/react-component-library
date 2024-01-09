@@ -91,7 +91,7 @@ function FormComp() {
             
            
           </div>
-          <ButtonComp></ButtonComp>
+          <ButtonComp>Continue to Confirmation</ButtonComp>
         </form>
       </div>
     </div>
