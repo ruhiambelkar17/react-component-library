@@ -1,4 +1,4 @@
-import "../assets/scss/mixins/_form.scss";
+import "../assets/scss/component/_form.scss";
 import ButtonComp from "./buttonComp";
 
 function FormComp() {
