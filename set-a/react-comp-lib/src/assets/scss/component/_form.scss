@@ -30,7 +30,7 @@
     @include flexColumn();
 }
 
-input{
+.form-input{
     @include formInput();
 }
 

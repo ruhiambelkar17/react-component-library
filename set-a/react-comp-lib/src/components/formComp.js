@@ -10,26 +10,27 @@ function FormComp() {
         <form action="">
           <div>
             <label for="paymethod" className="form-label">Select Payment Method</label>
-            
-            <div style={{display:"inline-flex",width:"100%"}} >
-                <div style={{marginRight:"25px"}} className="input1">
-                <label for="country"className="form-label">Country</label>
-                <input type="radio" />
+            <div style={{display:"inline-flex",width:"100%"}}>
+                <div className="form-input" style={{marginRight:"25px"}}>
+                    <input id="visa" type="radio" />
+                    <label className="form-label" for="visa">Visa</label>
                 </div>
-                <div style={{marginRight:"25px"}} className="input1">
-                <label for="country"className="form-label">Country</label>
-                <input type="radio" />
+                
+                <div className="form-input"style ={{marginRight:"25px"}} >
+                    <input type="radio" id="Mastercard" />
+                    <label className="form-label" for="Mastercard">Mastercard</label>
                 </div>
-                <div  className="input1">
-                <label for="country"className="form-label">Country</label>
-                <input type="radio" />
+                <div className="form-input"  >
+                    <input type="radio" id="PayPal" />
+                    <label className="form-label" for="PayPal" >PayPal</label>
                 </div>
-                </div>
+            </div>
           </div>
 
           <div>
             <label for="cardnumber" className="form-label">Card Number</label>
             <input
+            className="form-input"
               type="text"
               id="cardnumber"
               name="cardnumber"
@@ -41,6 +42,7 @@ function FormComp() {
               <label for="expdate" className="form-label">Expiry Date</label>
               <div className="inline-input">
                 <input
+                className="form-input"
                   type="text"
                   id="expdate"
                   name="expdate"
@@ -48,6 +50,7 @@ function FormComp() {
                   style={{marginRight:"15px"}}
                 />
                 <input
+                className="form-input"
                   type="text"
                   id="expdate"
                   name="expdate"
@@ -58,6 +61,7 @@ function FormComp() {
             <div className="column-input" style={{display:"flex",justifyContent:"end"}}>
               <label for="cvv" className="form-label">Cvv</label>
               <input
+              className="form-input"
                 type="password"
                 id="cvv"
                 name="cvv"
@@ -70,6 +74,7 @@ function FormComp() {
           <div>
             <label for="cardholder" className="form-label">Card Holder's name</label>
             <input
+            className="form-input"
               type="text"
               id="cardholder"
               name="cardholder"
@@ -81,6 +86,7 @@ function FormComp() {
               <label for="postalcode" className="form-label">Postal Code</label>
               <div className="inline-input">
                 <input
+                className="form-input"
                   type="text"
                   id="postalcode"
                   name="postalcode"
@@ -91,6 +97,7 @@ function FormComp() {
             <div className="column-input">
               <label for="country"className="form-label">Country</label>
               <input
+              className="form-input"
                 type="text"
                 id="country"
                 name="country"
