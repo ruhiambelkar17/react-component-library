@@ -1,5 +1,6 @@
 import "../assets/scss/component/_form.scss";
 import ButtonComp from "./buttonComp";
+import InputComp from "./inputComp";
 
 function FormComp() {
   return (
@@ -28,14 +29,15 @@ function FormComp() {
           </div>
 
           <div>
-            <label for="cardnumber" className="form-label">Card Number</label>
-            <input
-            className="form-input"
-              type="text"
-              id="cardnumber"
-              name="cardnumber"
-              placeholder="0000-0000-0000-0000"
-            />
+            
+            <InputComp 
+                for="cardnumber"
+                label="Card Number" 
+                type="text"
+                id="cardnumber"
+                name="cardnumber"
+                placeholder="0000-0000-0000-0000"
+            ></InputComp>
           </div>
           <div className="inline-input">
             <div className="column-input">
