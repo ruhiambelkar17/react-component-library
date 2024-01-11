@@ -3,7 +3,7 @@ import ButtonComp from "./buttonComp";
 import InputComp from "./inputComp";
 
 function FormComp() {
-    const mr={marginRight:'25px'};
+  const mr = { marginRight: "25px" };
   return (
     <div className="form-container">
       <h3>Payment Information</h3>
@@ -47,40 +47,32 @@ function FormComp() {
               placeholder="0000-0000-0000-0000"
             ></InputComp>
           </div>
-          <div className="inline-input">
-            <div className="column-input">
-              <div className="inline-input">
-                <div style={{marginRight:"15px"}}>
-                <InputComp
-                  for="expdate"
-                  label="Expiry Date"
-                
-                  type="text"
-                  id="expdate"
-                  name="expdate"
-                  placeholder="MM"
-                  
-                />
-                </div>
-                <InputComp
-                  for="expdate"
-                  label="Expiry Date"
-                  
-                  type="text"
-                  id="expdate"
-                  name="expdate"
-                  placeholder="YYYY"
-                />
-              </div>
+          <div className="inline-input" style={{maxWidth:"100%"}}>
+            <div style={{ marginRight: "15px" }} className="column-input">
+              <InputComp
+                for="expdate"
+                label="Expiry Date"
+                type="text"
+                id="expdate"
+                name="expdate"
+                placeholder="MM"
+              />
             </div>
-            <div
-              className="column-input"
-              style={{ display: "flex", justifyContent: "end" }}
-            >
+            <div className="column-input">
+              <InputComp
+                for="expdate"
+                label="Expiry Date"
+                type="text"
+                id="expdate"
+                name="expdate"
+                placeholder="YYYY"
+              />
+            </div>
+
+            <div className="column-input">
               <InputComp
                 for="cvv"
                 label="Cvv"
-               
                 type="password"
                 id="cvv"
                 name="cvv"
@@ -93,7 +85,6 @@ function FormComp() {
             <InputComp
               for="cardholder"
               label="Card Holder's name"
-              
               type="text"
               id="cardholder"
               name="cardholder"
@@ -102,17 +93,14 @@ function FormComp() {
           </div>
           <div className="inline-input">
             <div className="column-input">
-              
-                <InputComp
-                  for="postalcode"
-                  label="Postal Code"
-                  
-                  type="text"
-                  id="postalcode"
-                  name="postalcode"
-                  placeholder="Postal Code"
-                />
-              
+              <InputComp
+                for="postalcode"
+                label="Postal Code"
+                type="text"
+                id="postalcode"
+                name="postalcode"
+                placeholder="Postal Code"
+              />
             </div>
             <div className="column-input">
               <InputComp
