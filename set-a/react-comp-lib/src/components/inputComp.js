@@ -5,7 +5,7 @@ export default function InputComp(props){
         <div>
             <label for={props.for} className="form-label">{props.label}</label>
             <input
-            className="form-input"
+        className="form-input"
               type={props.type}
               id={props.id}
               name={props.name}

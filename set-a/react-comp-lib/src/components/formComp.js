@@ -35,6 +35,7 @@ function FormComp() {
                 </label>
               </div>
             </div>
+
           </div>
 
           <div>
@@ -47,7 +48,7 @@ function FormComp() {
               placeholder="0000-0000-0000-0000"
             ></InputComp>
           </div>
-          <div className="inline-input" style={{maxWidth:"100%"}}>
+          {/* <div style={{ display: "inline-flex", width: "100%" }}>
             <div style={{ marginRight: "15px" }} className="column-input">
               <InputComp
                 for="expdate"
@@ -79,8 +80,40 @@ function FormComp() {
                 placeholder="cvv"
               />
             </div>
-          </div>
+          </div> */}
+<div style={{ display: "inline-flex", width: "100%" }}>
+              <div style={{ marginRight: "25px",width: "100%"  }}>
+              <InputComp
+                for="expdate"
+                label="Expiry Date"
+                type="text"
+                id="expdate"
+                name="expdate"
+                placeholder="MM"
+              />
+              </div>
 
+              <div style={{ marginRight: "25px",marginTop:"19px",width: "100%"  }}>
+              <InputComp
+                
+                type="text"
+                id="expdate"
+                name="expdate"
+                placeholder="YY"
+              />
+              </div>
+              
+              <div style={{width: "100%"  }}>
+              <InputComp
+                for="expdate"
+                label="CVC/CVV"
+                type="text"
+                id="expdate"
+                name="expdate"
+                placeholder="CVV"
+              />
+              </div>
+            </div>
           <div>
             <InputComp
               for="cardholder"
