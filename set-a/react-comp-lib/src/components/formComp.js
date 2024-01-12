@@ -4,6 +4,11 @@ import InputComp from "./inputComp";
 
 function FormComp() {
   const mr = { marginRight: "25px" };
+
+  function submitPayment(){
+   console.log("button clickedddddd")
+  }
+
   return (
     <div className="form-container">
       <h3>Payment Information</h3>
@@ -35,7 +40,6 @@ function FormComp() {
                 </label>
               </div>
             </div>
-
           </div>
 
           <div>
@@ -48,8 +52,9 @@ function FormComp() {
               placeholder="0000-0000-0000-0000"
             ></InputComp>
           </div>
-          {/* <div style={{ display: "inline-flex", width: "100%" }}>
-            <div style={{ marginRight: "15px" }} className="column-input">
+
+          <div style={{ display: "inline-flex", width: "100%" }}>
+            <div style={{ marginRight: "25px", width: "100%" }}>
               <InputComp
                 for="expdate"
                 label="Expiry Date"
@@ -59,51 +64,19 @@ function FormComp() {
                 placeholder="MM"
               />
             </div>
-            <div className="column-input">
-              <InputComp
-                for="expdate"
-                label="Expiry Date"
-                type="text"
-                id="expdate"
-                name="expdate"
-                placeholder="YYYY"
-              />
-            </div>
 
-            <div className="column-input">
+            <div
+              style={{ marginRight: "25px", marginTop: "19px", width: "100%" }}
+            >
               <InputComp
-                for="cvv"
-                label="Cvv"
-                type="password"
-                id="cvv"
-                name="cvv"
-                placeholder="cvv"
-              />
-            </div>
-          </div> */}
-<div style={{ display: "inline-flex", width: "100%" }}>
-              <div style={{ marginRight: "25px",width: "100%"  }}>
-              <InputComp
-                for="expdate"
-                label="Expiry Date"
-                type="text"
-                id="expdate"
-                name="expdate"
-                placeholder="MM"
-              />
-              </div>
-
-              <div style={{ marginRight: "25px",marginTop:"19px",width: "100%"  }}>
-              <InputComp
-                
                 type="text"
                 id="expdate"
                 name="expdate"
                 placeholder="YY"
               />
-              </div>
-              
-              <div style={{width: "100%"  }}>
+            </div>
+
+            <div style={{ width: "100%" }}>
               <InputComp
                 for="expdate"
                 label="CVC/CVV"
@@ -112,8 +85,8 @@ function FormComp() {
                 name="expdate"
                 placeholder="CVV"
               />
-              </div>
             </div>
+          </div>
           <div>
             <InputComp
               for="cardholder"
@@ -124,8 +97,8 @@ function FormComp() {
               placeholder="card holder's name.."
             />
           </div>
-          <div className="inline-input">
-            <div className="column-input">
+          <div className="inline-input" style={{ width: "100%" }}>
+            <div style={{ width: "100%", marginRight: "25px" }}>
               <InputComp
                 for="postalcode"
                 label="Postal Code"
@@ -135,7 +108,7 @@ function FormComp() {
                 placeholder="Postal Code"
               />
             </div>
-            <div className="column-input">
+            <div style={{ width: "100%" }}>
               <InputComp
                 for="country"
                 label="Country"
@@ -146,7 +119,7 @@ function FormComp() {
               />
             </div>
           </div>
-          <ButtonComp>Continue to Confirmation</ButtonComp>
+          <ButtonComp type="button" onSelect={submitPayment}>Continue to Confirmation</ButtonComp>
         </form>
       </div>
     </div>

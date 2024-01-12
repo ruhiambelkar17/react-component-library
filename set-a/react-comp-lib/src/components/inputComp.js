@@ -10,7 +10,7 @@ export default function InputComp(props){
               id={props.id}
               name={props.name}
               placeholder={props.placeholder}
-              
+             
             />
         </div>
     )
